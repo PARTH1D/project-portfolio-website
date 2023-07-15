@@ -1,0 +1,75 @@
+body {
+    background-color: #f0f0f0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.contact-card {
+    width: 40%;
+    border: 1px solid #000;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#channel-card {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#channel-card h2 a {
+    text-decoration: underline;
+}
+
+.card-content {
+    width: 70%;
+}
+
+.profile-pic {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: fadeInOut 5s ;
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 1;}
+    12% {opacity: 0.75;}
+    25% {opacity: 0.63;}
+    50% {opacity: 0.5;}
+    63% {opacity: 0.63;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+.contact-card img {
+    width: 20px;
+    height: 20px;
+}
+
+#message {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2em;
+    animation: zoomInOut 2s infinite;
+    animation-delay: 5s;  /* Add this line */
+}
+
+@keyframes zoomInOut {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}

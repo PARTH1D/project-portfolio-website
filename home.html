@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles_navbar.css">
+    <link rel="stylesheet" href="styles_home.css">
+</head>
+<body>
+    <nav id="navbar"></nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+      $("#navbar").load("navbar.html"); 
+    });
+    </script>
+
+    <div class="container">
+        <div class="main-content">
+            <header>
+                <h1>Welcome</h1>
+            </header>
+            <p>We are Parth and Pritesh and we have created this website to showcase our projects and all the work we've done together. We're passionate about technology, innovation, and sharing our knowledge with others. Explore the website to learn more about us and our work!</p>
+            <div class="profile-images">
+                <img src="parth.jpg" alt="Parth Dethaliya" class="profile-image">
+                <img src="pritesh.png" alt="Pritesh Borad" class="profile-image">
+            </div>
+            <a href="https://www.youtube.com/@ppcodinglaboratory576/featured" class="youtube-link">Check out our YouTube channel!</a>
+        </div>
+    </div>
+</body>
+</html>

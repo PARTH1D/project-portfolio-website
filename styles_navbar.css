@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 60px 0 0 0; /* Add padding on top equivalent to the height of the navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 999;  /* ensure the navbar stays on top of other elements */
+}
+
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 21px 16px; /* Adjust padding to vertically center text */
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
