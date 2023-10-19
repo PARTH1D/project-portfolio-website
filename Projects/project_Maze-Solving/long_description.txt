@@ -1,0 +1,20 @@
+Solve a Maze easily by simple operations in MATLAB.
+
+Yoy may find code at : https://drive.google.com/file/d/1MlUPx67G8cgbKzmYIyMHYKEVvsqJkmMF/view
+
+Watershed Transform:
+
+- It segements the image in parts enclosed by water paths assuming water was dropped from top of the image.
+Help on Watershed Transform : https://www.mathworks.com/help/images...
+
+Try out different mazes on your own for fun. For any queries use comment section.
+
+We also solves problems on-demand, Stuck in Matlab/python during your project? Need help? mail the problem at pnplaboratory@gmail.com, we will try to give solution as soon as possible.
+
+Of-course this operation has some limitations. Find out any list them in comment section. 
+
+Created and Designed by Parth Dethaliya and Pritesh Borad.
+
+Keep Coding!!
+
+#Matlab #ImageProcessing #Maze #SolveMaze #TipsAndTricks #FunWithMatlab #WatershedTransform #WatershedMatlab

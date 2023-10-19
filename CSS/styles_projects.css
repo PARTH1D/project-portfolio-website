@@ -1,24 +1,99 @@
 body {
-    background-color: #f0f0f0; /* change the color as you prefer */
-    margin: 0;
-    padding-top: 60px; /* Add padding-top to the body equivalent to the height of the navbar */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    font-size: 2em;
+
+#projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
-p {
-    font-size: 1.5em;
+
+.project-card {
+    width: calc(33.33% - 16px); /* This will make sure three projects fit in a row */
+    height: 250px; /* Define a height so the background image has space to display */
+    background-size: cover; /* This will cover the entire area of the project card with the background image */
+    background-position: center; /* Center the background image */
+    margin: 8px; /* Add some margin around each card */
+    position: relative; /* This is for positioning the project description overlay */
+    overflow: hidden; /* To hide any overflow content, like the description if it's too long */
+    transition: transform 0.3s; /* Optional: Adds a smooth scaling effect on hover */
 }
-#navbar {
+
+.project-card:hover {
+    transform: scale(1.05); /* Optional: Slightly scale the card on hover for a dynamic effect */
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card:hover .project-description {
+    opacity: 1;
+}
+
+.project-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
     position: fixed;
+    z-index: 1;
+    left: 0;
     top: 0;
     width: 100%;
-    z-index: 100;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
 }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover, .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-images img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+
